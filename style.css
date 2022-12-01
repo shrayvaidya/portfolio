@@ -26,9 +26,9 @@ to this section's matching END comment to see page-specific styles.
   }
   
   /* Basic page style resets */
-  4 * {
+  /* 4 * {
     box-sizing: border-box;
-  }
+  } */
   [hidden] {
     display: none !important;
   }
@@ -126,7 +126,7 @@ to this section's matching END comment to see page-specific styles.
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    cursor: url(cursor: url(http://www.rw-designer.com/cursor-extern.php?id=86776););
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=86776);
   }
   
   /* Very light scaling for our illustration */
