@@ -28,7 +28,7 @@ END Glitch hello-app default styles
 ******************************************************************************/
 
 body {
-  font-family: HK Grotesk;
+  font-family: HK Grotesk, sans-serif;
   background-color: #96be7c;
 }
 
