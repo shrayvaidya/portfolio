@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>contact form</title>
-</head>
-
 <body>
 
 <link href="style.css" rel="stylesheet">
    
-<nav role="navigation" class="top-nav">
+<nav role="navigation" class="top-nav" aria-label="navigation bar">
         <ul>
           <li tabindex="1"><a href = "index.html">Home</a></li>
           <li tabindex="2"><a href = "about.html">About Me</a></li>
@@ -19,43 +13,43 @@
         </ul>
       </nav>
 
-<div class="fcf-body">
-    <div id="fcf-form">
-    <h3 class="fcf-h3">Send me a message!</h3>
-    <form name="myForm" id="fcf-form-id" class="fcf-form-class" method="post" action="success.html" onsubmit="return validateForm()">
-        <div class="fcf-form-group">
-            <label for="Name" class="fcf-label">Your first name</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="FirstName" class="fcf-form-control" required>
+<div class="form-body">
+    <div id="form">
+    <h3 class="form-header">Send me a message!</h3>
+    <form aria-label="contact form" name="myForm" id="form-id" class="form-class" method="post" action="success.html" onsubmit="return validateForm()">
+        <div class="form-group">
+            <label for="First Name" class="label">Your first name</label>
+            <div class="input">
+                <input type="text" id="Name" name="FirstName" class="form-control" required>
             </div>
         </div>
-        <div class="fcf-form-group">
-            <label for="Name" class="fcf-label">Your last name</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="LastName" class="fcf-form-control" required>
+        <div class="form-group">
+            <label for="Last Name" class="label">Your last name</label>
+            <div class="input">
+                <input type="text" id="Name" name="LastName" class="form-control" required>
             </div>
         </div>
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your email address</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+        <div class="form-group">
+            <label for="Email" class="label">Your email address</label>
+            <div class="input">
+                <input type="email" id="Email" name="Email" class="form-control" required>
             </div>
         </div>
-      <div class="fcf-form-group">
-            <label for="Phone" class="fcf-label">Your location</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Location" name="Location" class="fcf-form-control" required>
+      <div class="form-group">
+            <label for="Location" class="label">Your location</label>
+            <div class="input">
+                <input type="text" id="Location" name="Location" class="form-control" required>
             </div>
         </div>
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Your message</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+        <div class="form-group">
+            <label for="Message" class="label">Your message</label>
+            <div class="input">
+                <textarea id="Message" name="Message" class="form-control" rows="6" maxlength="3000" required></textarea>
             </div>
         </div>
       
-        <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        <div class="form-group">
+            <button type="submit" id="form-button" class="form-btn form-btn-primary form-btn-lg form-btn-block">Send Message</button>
         </div>
     </form>
     </div>
