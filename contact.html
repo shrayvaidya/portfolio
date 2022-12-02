@@ -21,12 +21,18 @@
 
 <div class="fcf-body">
     <div id="fcf-form">
-    <h3 class="fcf-h3">Contact us</h3>
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+    <h3 class="fcf-h3">Send me a message!</h3>
+    <form name="myForm" id="fcf-form-id" class="fcf-form-class" method="post" action="success.html" onsubmit="return validateForm()">
         <div class="fcf-form-group">
-            <label for="Name" class="fcf-label">Your name</label>
+            <label for="Name" class="fcf-label">Your first name</label>
             <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                <input type="text" id="Name" name="FirstName" class="fcf-form-control" required>
+            </div>
+        </div>
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your last name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="LastName" class="fcf-form-control" required>
             </div>
         </div>
         <div class="fcf-form-group">
@@ -35,12 +41,19 @@
                 <input type="email" id="Email" name="Email" class="fcf-form-control" required>
             </div>
         </div>
+      <div class="fcf-form-group">
+            <label for="Phone" class="fcf-label">Your location</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Location" name="Location" class="fcf-form-control" required>
+            </div>
+        </div>
         <div class="fcf-form-group">
             <label for="Message" class="fcf-label">Your message</label>
             <div class="fcf-input-group">
                 <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
             </div>
         </div>
+      
         <div class="fcf-form-group">
             <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
         </div>

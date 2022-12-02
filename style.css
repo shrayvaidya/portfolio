@@ -1,10 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
 
-/* Our default values set as CSS variables */
 :root {
-  --color-bg: #69f7be;
-  --color-text-main: #000000;
-  --color-primary: #ffff00;
   --wrapper-height: 87vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
@@ -12,7 +8,6 @@
   --font-family-header: "HK Grotesk";
 }
 
-/* Basic page style resets */
 * {
   box-sizing: border-box;
 }
@@ -23,9 +18,7 @@
 .divider {
   padding: 0 1rem;
 }
-/******************************************************************************
-END Glitch hello-app default styles
-******************************************************************************/
+
 
 body {
   font-family: HK Grotesk, sans-serif;
@@ -47,7 +40,6 @@ body {
   cursor: url(http://www.rw-designer.com/cursor-extern.php?id=86776);
 }
 
-/* Very light scaling for our illustration */
 .title {
   color: #306e06;
   font-family: HK Grotesk, sans-serif;
@@ -58,14 +50,13 @@ body {
   margin: 0;
 }
 
-/* Very light scaling for our illustration */
 .illustration {
   max-width: 100%;
   max-height: var(--image-max-width);
   margin-top: var(--image-margin);
 }
 
-/* Instructions */
+
 .instructions {
   margin: 1rem auto 0;
 }
@@ -83,22 +74,8 @@ input {
   transition: 500ms;
 }
 
-/* Subheading */
 h2 {
   color: #306e06;
-}
-
-/* Interactive image */
-.illustration:active {
-  transform: translateY(5px);
-}
-
-/* Button dip
-- Toggling this class on and off will move it down and up again
-- The button transition property above determines the speed of the translate (500ms)
-*/
-.dipped {
-  transform: translateY(5px);
 }
 
 nav.top-nav {
