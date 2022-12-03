@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shray's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav role="navigation" class="top-nav" aria-label="navigation bar">
+        <ul>
+          <li tabindex="1"><a href = "index.html">Home</a></li>
+          <li tabindex="2"><a href = "about.html">About Me</a></li>
+          <li tabindex="3"><a href = "https://drive.google.com/file/d/1EHQIPPLqzxDFXRwMNx8Zodsdn_0GvL48/view?usp=sharing">Resume</a></li>
+          <li tabindex="4"><a href = "contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="content" role="main">
+        <h1 class="title">Animations</h1>
+        <a class="link" href="https://endlesshour-a2.glitch.me/">
+            <img
+              src="https://cdn.glitch.global/a1165bcf-01d7-4e94-b6cd-029ca9b05112/animations.png?v=1669858298432"
+              alt="Animations in P5.js"
+              class="illustration"
+            />
+        </a>
+        <div class="info-box" aria-label="information">
+          <h2>Describe each of the four GIFs</h2>
+          <p>
+            My first gif is a sunrise, using ellipses for clouds and a modified version of the looping sun from Dr. Kate's own example. I also made the background change color from dark red to a light yellow over the duration of the loop, to simulate how the sky changes color as the sun rises. My second gif is a simple city scene at night. I used two circles to give the effect of a cresent moon in the sky, and I used rectangles to draw out the buildings, their windows, and the ground. I set the color of the windows to fade from bright yellow to dull gray to simulate people turning their lights on and off. My third gif is a galaxy with some planets orbiting a sun. I followed an example I found online to simulate the stars in the background, and then drew some circles and rings for the planets. Finally, I used some simple polar math to animate the planets' orbit. My fourth gid is meant to simulate an atom with electrons circling it, although I wasn't quite able to get the electrons to line up with their paths perfectly. I used a similar approach with polar looping as I did in the galaxy gif.
+          </p>
+          <h2>What P5 method or technique did you enjoy using the most? What was interesting to you about it?</h2>
+          <p>I enjoyed using the polar looping techniques, since I think revolving objects tend to look really fluid and seamless.</p>
+          <h2>Did you find any P5 functionality that wasn't covered in class?</h2>
+          <p>I followed a tutorial for drawing the stars in the background of my galaxy gif that defined and used a separate Star class, which I thought was really interesting. I also experimented a little bit with the clear and frameRate functions, which I don't recall covering in class.</p>
+          <h2>How did you get your looping gif to loop smoothly? What was hard or easy about that techinque?</h2>
+          <p>I followed the polar looping approach, using this.loopTime as a set variable that I could then create a percentage off of using t. I manipulated that percentage with radians to get the planets to complete one full circle around the sun in the time it took the gif to complete one loop.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
